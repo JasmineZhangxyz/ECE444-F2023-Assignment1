@@ -9,6 +9,7 @@ class utils:
     @staticmethod
     def formatter(number):
         if isinstance(number, int):
+            print("hello")
             return bin(number), oct(number)
         else:
             raise TypeError("Input must be an integer")
