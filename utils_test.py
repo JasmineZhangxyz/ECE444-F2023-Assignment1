@@ -30,4 +30,5 @@ class TestUtils(unittest.TestCase):
             utils.formatter(3.14)
 
 if __name__ == '__main__':
+    print("hello")
     unittest.main()
