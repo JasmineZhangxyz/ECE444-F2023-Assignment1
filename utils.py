@@ -1,10 +1,14 @@
 class utils:
     @staticmethod
     def reversed(number):
-        return int(str(number)[::-1])
+        if isinstance(number, int):
+            return int(str(number)[::-1])
+        else:
+            raise TypeError("Input must be an integer")
 
     @staticmethod
     def formatter(number):
-        binary_format = bin(number)
-        octal_format = oct(number)
-        return binary_format, octal_format
+        if isinstance(number, int):
+            return bin(number), oct(number)
+        else:
+            raise TypeError("Input must be an integer")
